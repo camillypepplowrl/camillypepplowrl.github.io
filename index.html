@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camilly Victoria | Portfólio Profissional</title>
+<meta name="description" content="Portfólio profissional de Camilly Victoria, estudante de Sistemas de Informação.">
+<meta name="author" content="Camilly Victoria Ribeiro Pepplow Lopes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rosa:#f7a8c4; --rosa-forte:#e0679a; --rosa-claro:#fde6ef; --rosa-bebe:#fff5f9;
+  --lilas:#c9b6f2; --lilas-claro:#efe8fd; --menta:#bfe8dc; --pessego:#ffd9c7;
+  --texto:#5a4560; --texto-suave:#8a7490; --branco:#fff;
+  --sombra:0 8px 24px rgba(224,103,154,.13);
+  --raio:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--rosa) transparent}
+::-webkit-scrollbar{width:7px;height:7px}
+::-webkit-scrollbar-button{display:none}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--rosa);border-radius:99px}
+body{font-family:"Quicksand",system-ui,sans-serif;color:var(--texto);background:var(--rosa-bebe);line-height:1.65;font-size:16px}
+a{color:var(--rosa-forte);text-decoration:none;font-weight:600}
+a:hover{text-decoration:underline}
+.script{font-family:"Dancing Script",cursive}
+
+/* menu */
+nav{position:sticky;top:0;z-index:10;background:rgba(255,245,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rosa-claro)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1080px;margin:auto}
+nav .logo{font-family:"Dancing Script",cursive;font-size:1.7rem;color:var(--rosa-forte);font-weight:700}
+nav ul{display:flex;gap:4px;list-style:none;flex-wrap:wrap}
+nav ul a{display:block;padding:6px 12px;border-radius:99px;color:var(--texto);font-size:.88rem;font-weight:600}
+nav ul a:hover{background:var(--rosa-claro);text-decoration:none}
+
+/* capa */
+.capa{position:relative;overflow:hidden;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;
+  background:radial-gradient(circle at 15% 20%,var(--lilas-claro) 0,transparent 40%),radial-gradient(circle at 85% 75%,var(--pessego) 0,transparent 38%),linear-gradient(160deg,var(--rosa-claro),var(--rosa-bebe))}
+.capa .avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--rosa),var(--lilas));color:#fff;font-family:"Dancing Script",cursive;font-size:3.6rem;font-weight:700;
+  box-shadow:0 0 0 8px #fff,0 0 0 12px var(--rosa-claro),var(--sombra)}
+.capa small{display:inline-block;background:#fff;color:var(--rosa-forte);padding:6px 16px;border-radius:99px;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:var(--sombra)}
+.capa h1{font-family:"Dancing Script",cursive;font-size:clamp(2.8rem,8vw,4.8rem);color:var(--rosa-forte);line-height:1.1;margin:18px 0 6px}
+.capa .nome-completo{font-size:1rem;color:var(--texto-suave);font-weight:500}
+.capa .cargo{font-size:1.2rem;font-weight:600;margin:14px 0 26px}
+.botoes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.botao{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:99px;background:var(--rosa-forte);color:#fff;font-weight:700;box-shadow:var(--sombra)}
+.botao.claro{background:#fff;color:var(--rosa-forte)}
+.botao:hover{text-decoration:none;transform:translateY(-2px)}
+.botao{transition:transform .2s}
+.flor{position:absolute;opacity:.55;pointer-events:none}
+
+/* seções */
+section{padding:72px 20px;scroll-margin-top:56px}
+.wrap{max-width:1080px;margin:auto}
+.titulo{text-align:center;margin-bottom:38px}
+.titulo .num{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--rosa-claro);color:var(--rosa-forte);font-weight:700;margin-bottom:8px}
+.titulo h2{font-family:"Dancing Script",cursive;font-size:clamp(2.2rem,5vw,3rem);color:var(--rosa-forte);line-height:1.15}
+.titulo p{color:var(--texto-suave);max-width:640px;margin:6px auto 0}
+.alt{background:#fff}
+.card{background:#fff;border-radius:var(--raio);padding:26px;box-shadow:var(--sombra);border:1px solid var(--rosa-claro)}
+.alt .card{background:var(--rosa-bebe)}
+.card h3{font-size:1.1rem;color:var(--texto);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.grade{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+ul.lista{list-style:none}
+ul.lista li{position:relative;padding-left:24px;margin:6px 0}
+ul.lista li::before{content:"\2665";position:absolute;left:0;top:0;color:var(--rosa);font-size:.9rem}
+.tag{display:inline-block;background:var(--lilas-claro);color:#7a5bbf;padding:3px 12px;border-radius:99px;font-size:.8rem;font-weight:700;margin:3px 4px 3px 0}
+.tag.rosa{background:var(--rosa-claro);color:var(--rosa-forte)}
+.tag.menta{background:#e3f6f0;color:#3c8f78}
+.sub{color:var(--texto-suave);font-size:.9rem}
+
+/* sobre */
+.sobre{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start}
+.citacao{font-size:1.08rem;background:linear-gradient(135deg,var(--rosa-claro),var(--lilas-claro));border-radius:var(--raio);padding:30px;position:relative}
+.citacao::before{content:"\201C";font-family:Georgia,serif;font-size:5rem;color:var(--rosa);position:absolute;top:-18px;left:16px;line-height:1}
+
+/* currículo */
+.linha{border-left:3px dashed var(--rosa);margin-left:8px;padding-left:22px}
+.item{position:relative;margin-bottom:22px}
+.item::before{content:"";position:absolute;left:-31px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--rosa-forte);box-shadow:0 0 0 4px var(--rosa-claro)}
+.item .quando{font-size:.82rem;font-weight:700;color:var(--rosa-forte)}
+.item h4{font-size:1.02rem}
+.item p,.item li{font-size:.93rem}
+
+/* links */
+.perfil{display:flex;gap:16px;align-items:center}
+.perfil .ic{flex:0 0 58px;height:58px;border-radius:18px;display:grid;place-items:center;color:#fff}
+.perfil .ic svg{width:30px;height:30px;fill:#fff}
+.li{background:#7aa7e0}.gh{background:#8b6fc9}
+.projeto{border-top:6px solid var(--rosa)}
+.projeto:nth-child(2){border-top-color:var(--lilas)}
+.projeto:nth-child(3){border-top-color:var(--menta)}
+
+/* plano */
+.prazo{text-align:center}
+.prazo .bolinha{width:64px;height:64px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;font-size:1.7rem}
+.curto .bolinha{background:var(--rosa-claro)}.medio .bolinha{background:var(--lilas-claro)}.longo .bolinha{background:#e3f6f0}
+.prazo ul{text-align:left}
+.objetivo{text-align:center;font-size:1.1rem;max-width:780px;margin:0 auto 30px;background:#fff;border:2px dashed var(--rosa);border-radius:var(--raio);padding:22px}
+
+/* tabela */
+.tabela{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);background:#fff}
+.tabela th{background:var(--rosa-forte);color:#fff;text-align:left;padding:12px 16px;font-size:.9rem}
+.tabela td{padding:12px 16px;border-top:1px solid var(--rosa-claro);font-size:.93rem}
+.tabela tr:nth-child(even) td{background:var(--rosa-bebe)}
+.prior{font-weight:700;border-radius:99px;padding:2px 10px;font-size:.78rem;white-space:nowrap}
+.alta{background:var(--rosa-claro);color:var(--rosa-forte)}.media{background:var(--lilas-claro);color:#7a5bbf}.baixa{background:#e3f6f0;color:#3c8f78}
+
+/* vídeo */
+.video{max-width:760px;margin:auto;text-align:center}
+.tela{aspect-ratio:16/9;border-radius:var(--raio);background:linear-gradient(135deg,var(--rosa),var(--lilas));display:grid;place-items:center;color:#fff;box-shadow:var(--sombra);overflow:hidden}
+.tela iframe{width:100%;height:100%;border:0}
+.play{width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;margin:0 auto 12px}
+.play svg{width:34px;fill:var(--rosa-forte);margin-left:5px}
+.link-video{margin-top:16px;font-size:1.05rem;word-break:break-all}
+
+footer{text-align:center;padding:40px 20px;background:linear-gradient(160deg,var(--rosa-claro),var(--lilas-claro))}
+footer .script{font-size:2rem;color:var(--rosa-forte)}
+
+@media (max-width:860px){
+  .g3{grid-template-columns:1fr}
+  .g2,.sobre{grid-template-columns:1fr}
+  nav ul{display:none}
+  section{padding:56px 16px}
+  .tabela{display:block;overflow-x:auto}
+}
+
+/* impressão (PDF) */
+@page{size:A4;margin:12mm}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  nav{display:none}
+  body{font-size:12.5px;background:#fff}
+  .capa{min-height:270mm;break-after:page}
+  section{padding:6mm 0;break-before:page}
+  section.sem-quebra{break-before:auto}
+  .card{break-inside:auto}
+  .item,.tabela tr,.prazo,.projeto,.perfil,.citacao,.lista li{break-inside:avoid}
+  .titulo{break-after:avoid;margin-bottom:18px}
+  .grade{gap:12px}
+  .card{padding:16px}
+  .objetivo{margin-bottom:14px;padding:14px}
+  #curriculo .wrap{zoom:.8}
+  #aprendizado .wrap{zoom:.86}
+  .botao:hover{transform:none}
+  .tela{aspect-ratio:auto;height:60mm}
+  footer{break-before:avoid}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .sobre{grid-template-columns:1.3fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="logo">Camilly</span>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#curriculo">Currículo</a></li>
+      <li><a href="#perfis">LinkedIn e GitHub</a></li>
+      <li><a href="#carreira">Carreira</a></li>
+      <li><a href="#aprendizado">Aprendizado</a></li>
+      <li><a href="#posicionamento">Posicionamento</a></li>
+      <li><a href="#pitch">Pitch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CAPA -->
+<header class="capa">
+  <svg class="flor" style="top:8%;left:6%;width:90px" viewBox="0 0 100 100"><g fill="#f7a8c4"><circle cx="50" cy="25" r="18"/><circle cx="75" cy="45" r="18"/><circle cx="65" cy="74" r="18"/><circle cx="35" cy="74" r="18"/><circle cx="25" cy="45" r="18"/></g><circle cx="50" cy="52" r="12" fill="#ffd9c7"/></svg>
+  <svg class="flor" style="bottom:10%;right:7%;width:120px" viewBox="0 0 100 100"><g fill="#c9b6f2"><circle cx="50" cy="25" r="18"/><circle cx="75" cy="45" r="18"/><circle cx="65" cy="74" r="18"/><circle cx="35" cy="74" r="18"/><circle cx="25" cy="45" r="18"/></g><circle cx="50" cy="52" r="12" fill="#fff5f9"/></svg>
+  <svg class="flor" style="top:18%;right:16%;width:40px" viewBox="0 0 24 24"><path fill="#f7a8c4" d="M12 21s-7.5-4.6-9.6-9.2C.8 8.4 3 4.5 6.7 4.5c2 0 3.6 1.1 5.3 3 1.7-1.9 3.3-3 5.3-3 3.7 0 5.9 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+  <svg class="flor" style="bottom:22%;left:14%;width:30px" viewBox="0 0 24 24"><path fill="#c9b6f2" d="M12 21s-7.5-4.6-9.6-9.2C.8 8.4 3 4.5 6.7 4.5c2 0 3.6 1.1 5.3 3 1.7-1.9 3.3-3 5.3-3 3.7 0 5.9 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+  <div>
+    <div class="avatar">CV</div>
+    <small>Portfólio Profissional</small>
+    <h1>Camilly Victoria</h1>
+    <div class="nome-completo">Camilly Victoria Ribeiro Pepplow Lopes</div>
+    <p class="cargo">Estudante de Sistemas de Informação · Assistente Financeiro Júnior</p>
+    <div class="botoes">
+      <a class="botao" href="https://www.linkedin.com/in/camilly-victoria-438a90351" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="botao claro" href="https://github.com/camillypepplowrl" target="_blank" rel="noopener">GitHub</a>
+      <a class="botao claro" href="#pitch">Vídeo de pitch</a>
+    </div>
+    <p class="sub" style="margin-top:26px">Projeto Integrador – Design da Minha Carreira · Design Profissional · Universidade Positivo · 2026</p>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section id="sobre" class="alt sem-quebra">
+  <div class="wrap">
+    <div class="titulo"><h2>Prazer, eu sou a Camilly</h2><p>Quem eu sou, o que estudo e o que me move</p></div>
+    <div class="sobre">
+      <div class="citacao">
+        Sou estudante de Sistemas de Informação e estou construindo minha trajetória profissional com interesse em tecnologia e melhoria de processos. Tenho experiência em atividades administrativas, atendimento ao público e rotinas financeiras, que me ajudaram a desenvolver organização, responsabilidade, atenção às informações e capacidade de adaptação. Hoje busco fortalecer meus conhecimentos em programação, banco de dados, análise de dados e automação, ligando os estudos da faculdade a situações práticas. Sou dedicada, gosto de aprender e estou disposta a receber orientações e evoluir sempre. Meu objetivo é conquistar oportunidades na área de tecnologia, contribuir com soluções úteis e construir uma carreira sólida.
+      </div>
+      <div class="card">
+        <h3>&#127799; Meus diferenciais</h3>
+        <ul class="lista">
+          <li>Vivo a rotina administrativa e financeira, então entendo o problema de quem usa o sistema.</li>
+          <li>Organização e atenção aos detalhes, vindas do trabalho com documentos e conferências.</li>
+          <li>Atendimento ao cliente: sei ouvir e explicar com calma.</li>
+          <li>Facilidade para aprender coisas novas e vontade de crescer.</li>
+        </ul>
+        <p style="margin-top:14px"><span class="tag rosa">Curitiba – PR</span><span class="tag">Sistemas de Informação</span><span class="tag menta">Inglês em formação</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1 CURRÍCULO -->
+<section id="curriculo">
+  <div class="wrap">
+    <div class="titulo"><div class="num">1</div><h2>Currículo Profissional</h2><p>Versão final, revisada e atualizada</p></div>
+    <div class="grade g2">
+      <div class="card">
+        <h3>&#128188; Experiência profissional</h3>
+        <div class="linha">
+          <div class="item"><span class="quando">Out/2026 – atual</span><h4>Assistente Financeiro Júnior · Grupo Trapézio</h4>
+            <ul class="lista"><li>Apoio às rotinas do setor financeiro e aos processos internos.</li><li>Organização e conferência de informações e documentos.</li><li>Uso dos sistemas e procedimentos da equipe financeira.</li></ul></div>
+          <div class="item"><span class="quando">Mar/2025 – Set/2026</span><h4>Jovem Aprendiz – Administrativo · Empresa de serviços terceirizados</h4>
+            <ul class="lista"><li>Apoio às rotinas administrativas e às demandas internas.</li><li>Organização de documentos, informações e controles.</li><li>Uso de ferramentas de escritório e planilhas no dia a dia.</li></ul></div>
+          <div class="item"><span class="quando">Jun/2023 – Jul/2024</span><h4>Auxiliar Administrativo · Dirreh Noivas Locações de Trajes</h4>
+            <ul class="lista"><li>Organização de documentos e contratos de locação.</li><li>Atendimento presencial e por telefone aos clientes.</li><li>Separação e organização dos trajes para as saídas semanais.</li></ul></div>
+        </div>
+      </div>
+      <div class="grade">
+        <div class="card">
+          <h3>&#127891; Formação</h3>
+          <div class="linha">
+            <div class="item"><span class="quando">Em andamento</span><h4>Sistemas de Informação (Bacharelado)</h4><p>Universidade Positivo</p></div>
+            <div class="item"><span class="quando">Concluído em 2025</span><h4>Ensino Médio Técnico em Administração</h4><p>Colégio Estadual Ângelo Gusso</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>&#128172; Idiomas e cursos</h3>
+          <p>Português · nativo<br>Inglês · em formação, na inFlux</p>
+        </div>
+        <div class="card">
+          <h3>&#10024; Habilidades</h3>
+          <p><span class="tag rosa">Organização</span><span class="tag rosa">Responsabilidade</span><span class="tag rosa">Atendimento ao cliente</span><span class="tag rosa">Comunicação</span><span class="tag rosa">Trabalho em equipe</span><span class="tag rosa">Facilidade de aprendizagem</span><span class="tag">Rotinas administrativas</span><span class="tag">Excel e planilhas</span><span class="tag">HTML, CSS e JavaScript</span><span class="tag">SQL e MySQL</span><span class="tag">Git e GitHub</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 LINKEDIN E GITHUB -->
+<section id="perfis" class="alt">
+  <div class="wrap">
+    <div class="titulo"><div class="num">2</div><h2>LinkedIn e GitHub</h2><p>Meus perfis profissionais, projetos e competências técnicas</p></div>
+    <div class="grade g2" style="margin-bottom:24px">
+      <div class="card perfil">
+        <div class="ic li"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6v5.4h-4v-4.8c0-1.2 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5v4.9h-4z"/></svg></div>
+        <div><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/camilly-victoria-438a90351" target="_blank" rel="noopener">linkedin.com/in/camilly-victoria-438a90351</a>
+          <p class="sub">Formação, experiências e área de interesse. Uso para acompanhar vagas, seguir empresas e registrar cursos e projetos.</p></div>
+      </div>
+      <div class="card perfil">
+        <div class="ic gh"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></div>
+        <div><h3>GitHub</h3><a href="https://github.com/camillypepplowrl" target="_blank" rel="noopener">github.com/camillypepplowrl</a>
+          <p class="sub">Bio, link do LinkedIn, README de apresentação e os projetos da faculdade publicados.</p></div>
+      </div>
+    </div>
+    <div class="grade g3">
+      <div class="card projeto">
+        <h3>&#9749; Moka Cafés</h3>
+        <p>Site de uma cafeteria feito no projeto de Front-end Web: cinco páginas, cardápio, pedido salvo no navegador, vídeo, áudio e formulário de contato.</p>
+        <p style="margin:10px 0"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span></p>
+        <a href="https://github.com/camillypepplowrl/moka-cafes" target="_blank" rel="noopener">Ver no GitHub &rarr;</a>
+      </div>
+      <div class="card projeto">
+        <h3>&#127916; Cine Estação</h3>
+        <p>Banco de dados de um cinema, feito em grupo na disciplina de Modelagem de Banco de Dados: filmes, sessões, clientes, ingressos e pagamentos, com regras de integridade e permissões.</p>
+        <p style="margin:10px 0"><span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">Modelagem</span></p>
+        <a href="https://github.com/camillypepplowrl/cine-estacao-banco-de-dados" target="_blank" rel="noopener">Ver no GitHub &rarr;</a>
+      </div>
+      <div class="card projeto">
+        <h3>&#128184; Controle financeiro</h3>
+        <p>Projeto pessoal em planejamento: organizar e analisar gastos e recebimentos, começando em planilha e depois levando os dados para um banco e um painel simples.</p>
+        <p style="margin:10px 0"><span class="tag">Excel</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span></p>
+        <span class="sub">Em planejamento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 PLANO DE CARREIRA -->
+<section id="carreira">
+  <div class="wrap">
+    <div class="titulo"><div class="num">3</div><h2>Plano de Carreira</h2><p>Para onde eu quero ir e como pretendo chegar</p></div>
+    <div class="objetivo"><strong style="color:var(--rosa-forte)">Meu objetivo:</strong> conseguir um estágio ou uma posição inicial em TI, de preferência na área de dados, e no longo prazo atuar como Analista de Dados ou Analista de Sistemas, ajudando empresas a organizar informações e melhorar processos, principalmente nas áreas administrativa e financeira.</div>
+    <div class="grade g3">
+      <div class="card prazo curto"><div class="bolinha">&#127793;</div><h3 style="justify-content:center">Curto prazo · até 1 ano</h3>
+        <ul class="lista"><li>Rotina semanal de estudos e bom desempenho em programação e banco de dados.</li><li>Curso de Python básico e prática de lógica.</li><li>Evoluir no Excel e usar isso no trabalho atual.</li><li>Manter o GitHub e o LinkedIn atualizados.</li><li>Continuar o inglês na inFlux.</li></ul></div>
+      <div class="card prazo medio"><div class="bolinha">&#127799;</div><h3 style="justify-content:center">Médio prazo · 1 a 3 anos</h3>
+        <ul class="lista"><li>Conseguir um estágio em TI ou em dados.</li><li>Certificado de Análise de Dados do Google e estudo de Power BI.</li><li>Ter de três a cinco projetos no portfólio.</li><li>Chegar ao inglês intermediário.</li></ul></div>
+      <div class="card prazo longo"><div class="bolinha">&#127801;</div><h3 style="justify-content:center">Longo prazo · 3 a 5 anos</h3>
+        <ul class="lista"><li>Concluir a graduação.</li><li>Atuar como Analista de Dados ou de BI e crescer para Pleno.</li><li>Certificação Microsoft PL-300 (Power BI).</li><li>Avaliar uma especialização e buscar vagas internacionais com inglês avançado.</li></ul></div>
+    </div>
+    <div class="grade g2" style="margin-top:24px">
+      <div class="card"><h3>&#127919; Área de atuação desejada</h3>
+        <p>Análise de dados e Business Intelligence, com interesse também em banco de dados, desenvolvimento de sistemas e automação de processos. Quero começar por vagas ligadas a finanças e processos, onde minha experiência atual ajuda.</p></div>
+      <div class="card"><h3>&#129520; Competências necessárias</h3>
+        <p><span class="tag">SQL e banco de dados</span><span class="tag">Excel avançado</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Lógica de programação</span><span class="tag">Inglês técnico</span><span class="tag rosa">Comunicação</span><span class="tag rosa">Pensamento crítico</span><span class="tag rosa">Organização do tempo</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 LIFELONG LEARNING -->
+<section id="aprendizado" class="alt">
+  <div class="wrap">
+    <div class="titulo"><div class="num">4</div><h2>Aprendizado Contínuo</h2><p>Lifelong learning: o que quero desenvolver e como</p></div>
+    <div class="grade g2" style="margin-bottom:24px">
+      <div class="card"><h3>&#128187; Habilidades técnicas</h3>
+        <ul class="lista">
+          <li><strong>Programação e lógica:</strong> resolver problemas com algoritmos e evoluir aos poucos nas linguagens da graduação.</li>
+          <li><strong>Banco de dados:</strong> modelagem, relacionamentos e consultas SQL.</li>
+          <li><strong>Excel e análise de dados:</strong> fórmulas, funções de busca e tabelas dinâmicas.</li>
+          <li><strong>Desenvolvimento de sistemas:</strong> requisitos, planejamento, implementação, testes e manutenção.</li>
+          <li><strong>Automação e IA:</strong> ferramentas para reduzir tarefas repetitivas, avaliando sempre os limites.</li>
+          <li><strong>Inglês técnico:</strong> ler documentações, tutoriais e cursos.</li>
+        </ul></div>
+      <div class="card"><h3>&#128150; Habilidades comportamentais</h3>
+        <ul class="lista">
+          <li><strong>Comunicação:</strong> explicar ideias, fazer perguntas e apresentar resultados com clareza.</li>
+          <li><strong>Organização e gestão do tempo:</strong> planejar estudos, definir prioridades e cumprir prazos.</li>
+          <li><strong>Proatividade e autonomia:</strong> pesquisar alternativas e saber quando pedir ajuda.</li>
+          <li><strong>Trabalho em equipe:</strong> ouvir pontos de vista e colaborar.</li>
+          <li><strong>Pensamento crítico:</strong> analisar por etapas e testar antes de concluir.</li>
+          <li><strong>Adaptabilidade:</strong> aceitar feedbacks e aprender com os erros.</li>
+        </ul></div>
+    </div>
+    <table class="tabela">
+      <thead><tr><th>Curso / certificação</th><th>Onde</th><th>Prazo</th><th>Prioridade</th></tr></thead>
+      <tbody>
+        <tr><td>Python básico (Mundo 1 e 2)</td><td>Curso em Vídeo (gratuito)</td><td>1º sem. 2027</td><td><span class="prior alta">Alta</span></td></tr>
+        <tr><td>Excel intermediário e avançado</td><td>Fundação Bradesco – Escola Virtual</td><td>1º sem. 2027</td><td><span class="prior alta">Alta</span></td></tr>
+        <tr><td>Inglês</td><td>inFlux</td><td>Em andamento</td><td><span class="prior alta">Alta</span></td></tr>
+        <tr><td>SQL e banco de dados (prática além da disciplina)</td><td>Universidade Positivo e MySQL</td><td>2º sem. 2027</td><td><span class="prior media">Média</span></td></tr>
+        <tr><td>Certificado Profissional de Análise de Dados do Google</td><td>Coursera</td><td>2028</td><td><span class="prior media">Média</span></td></tr>
+        <tr><td>Microsoft Power BI Data Analyst (PL-300)</td><td>Microsoft Learn</td><td>2029</td><td><span class="prior baixa">Longo prazo</span></td></tr>
+      </tbody>
+    </table>
+    <div class="card" style="margin-top:24px"><h3>&#128197; Como vou acompanhar</h3>
+      <p><strong>Toda semana</strong> confiro as horas de estudo e reorganizo a agenda. <strong>Todo mês</strong> olho os cursos concluídos, os projetos no GitHub e atualizo o LinkedIn. <strong>Todo semestre</strong> reviso o plano de carreira, as vagas a que me candidatei e os feedbacks recebidos, ajustando as prioridades.</p></div>
+  </div>
+</section>
+
+<!-- 5 POSICIONAMENTO -->
+<section id="posicionamento">
+  <div class="wrap">
+    <div class="titulo"><div class="num">5</div><h2>Estratégia de Posicionamento</h2><p>Networking, presença digital e comunidades</p></div>
+    <div class="grade g3">
+      <div class="card"><h3>&#128279; Networking</h3>
+        <ul class="lista">
+          <li>Conectar no LinkedIn com colegas, professores e profissionais de dados e TI.</li>
+          <li>Conversar com quem já trabalha na área para entender o dia a dia e os caminhos de entrada.</li>
+          <li>Participar de trabalhos em grupo e projetos da faculdade com mais protagonismo.</li>
+          <li>Pedir feedback sobre meu currículo e meus projetos.</li>
+        </ul></div>
+      <div class="card"><h3>&#128241; Presença digital</h3>
+        <ul class="lista">
+          <li>LinkedIn sempre atualizado com cursos, certificados e projetos.</li>
+          <li>Publicar no LinkedIn o que aprendo, como um projeto concluído ou um curso finalizado.</li>
+          <li>GitHub com commits frequentes e um README em cada projeto.</li>
+          <li>Manter este portfólio online e atualizado a cada semestre.</li>
+        </ul></div>
+      <div class="card"><h3>&#127775; Comunidades e eventos</h3>
+        <ul class="lista">
+          <li><strong>Comunidades de mulheres na tecnologia</strong>, como PrograMaria e WoMakersCode.</li>
+          <li><strong>Comunidades de Curitiba</strong>, como DevParaná e GDG Curitiba.</li>
+          <li><strong>Eventos</strong> como The Developer's Conference (TDC) e semanas acadêmicas da Universidade Positivo.</li>
+          <li><strong>Oportunidades</strong>: programas de estágio, como Sebrae/PR, CPQD e a Prefeitura de Curitiba.</li>
+        </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 PITCH -->
+<section id="pitch" class="alt">
+  <div class="wrap video">
+    <div class="titulo"><div class="num">6</div><h2>Vídeo de Pitch Profissional</h2><p>Em até 3 minutos: minha trajetória, competências, objetivos e diferenciais</p></div>
+    <!-- VIDEO: quando tiver o link do YouTube, trocar este bloco pelo iframe do video -->
+    <div class="tela"><div><div class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></div><strong>Vídeo em breve</strong></div></div>
+    <p class="link-video sub">&#127909; Meu vídeo de pitch está sendo gravado e vai aparecer aqui.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="script">Obrigada pela visita!</div>
+  <p>Camilly Victoria Ribeiro Pepplow Lopes · Curitiba – PR</p>
+  <p><a href="mailto:camillypepplowrl@gmail.com">camillypepplowrl@gmail.com</a> · <a href="https://www.linkedin.com/in/camilly-victoria-438a90351" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/camillypepplowrl" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+
+</body>
+</html>
